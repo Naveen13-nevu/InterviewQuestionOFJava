@@ -3,18 +3,13 @@ public class StringCompression {
 
         String str = "aaabbcccddaa";
 
-        for (int i = 0; i < str.length(); i++) {
-
-            int count = 1;
-
-           
-            while (i < str.length() - 1 && 
-                   str.charAt(i) == str.charAt(i + 1)) {
+        for(int i=0;i<str.length();i++){
+            int count =1;
+            while(i<str.length()-1&& str.charAt(i)==str.charAt(i+1)){
+                i++;
                 count++;
-                i++;   
             }
-
-            System.out.print(str.charAt(i) + "" + count);
+            System.out.print(str.charAt(i)+""+count);
         }
     }
 }
