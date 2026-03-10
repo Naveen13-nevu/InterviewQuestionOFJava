@@ -6,9 +6,10 @@ public class RemoveDuplicates {
 
         for(int i=0;i<arr.length;i++){
              boolean isDuplicate = false;
-            for(int j=i+1;j<arr.length;j++){
+            for(int j=0;j<i;j++){
                 if(arr[i] ==arr[j]){
                     isDuplicate = true;
+                    break;
                 }
             }
 
@@ -16,8 +17,5 @@ public class RemoveDuplicates {
             System.out.println(arr[i]);
         }
         }
-       
-
-
     }
 }

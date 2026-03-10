@@ -16,9 +16,5 @@ public class FirstNonRepeatingchar {
                 System.out.println(str.charAt(i));
             }
         }
-
-
-
-
     }
 }
