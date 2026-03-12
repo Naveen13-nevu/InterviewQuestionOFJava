@@ -14,6 +14,7 @@ public class FrequencyOfChar {
         for(int k=0;k<i;k++){
             if(str.charAt(i) == str.charAt(k)){
                 isAlreadyCounted = true;
+                break;
             }
         }
         if(!isAlreadyCounted){
