@@ -12,6 +12,6 @@ public class StockBuyAndSell {
             profit=currentProfit;
         }
        }
-    System.out.println(profit);
+        System.out.println(profit);
     }
 }

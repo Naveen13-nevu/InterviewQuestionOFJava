@@ -15,7 +15,6 @@ public class mergeTwoSortedArrays {
             else{
                 result[k++]=arr2[j++];
             }
-           
         }
         while(i<arr1.length){
             result[k++] = arr1[i++];

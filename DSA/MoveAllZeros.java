@@ -12,7 +12,7 @@ public class MoveAllZeros {
             arr[j]=0;
             j++;
         }
-       
+
         for(int n:arr){
             System.out.print(n+" ");
         }
