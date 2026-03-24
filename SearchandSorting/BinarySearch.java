@@ -6,7 +6,7 @@ public class BinarySearch {
         int high = arr.length-1;
 
         while(low<=high){
-            int mid = (low + high)/2;
+            int mid = low+ (high - low)/2;
             if(arr[mid] == key){
                 return mid;
             }
@@ -17,12 +17,8 @@ public class BinarySearch {
                 high = mid -1;
             }
         }
-
-
         return-1;
     }
-
-
     public static void main(String[] args) {
         
         int arr[]={10,20,30,40};
@@ -34,6 +30,5 @@ public class BinarySearch {
         else{
             System.out.println("Element found at index: "+result);
         }
-
     }
 }
