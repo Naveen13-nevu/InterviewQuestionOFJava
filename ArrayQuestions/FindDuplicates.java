@@ -7,12 +7,13 @@ public class FindDuplicates {
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> duplicates = new HashSet<>();
 
-        for(int num : arr){
+        for(int num:arr){
             if(set.contains(num)){
                 duplicates.add(num);
             }
-            else{
-                set.add(num);   
+            else
+            {
+                set.add(num);
             }
         }
         System.out.println(duplicates);
