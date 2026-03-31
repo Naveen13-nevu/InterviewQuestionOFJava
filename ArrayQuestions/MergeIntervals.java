@@ -5,40 +5,41 @@ public class MergeIntervals {
         int n = arr.length;
 
         for(int i=0;i<n-1;i++){
-            for(int j=0;j<n-1-i;j++){
+            for(int j=0;j<n-i-1;j++){
                 if(arr[j][0] > arr[j+1][0]){
-                    int [] temp = arr[j];
+                    int []temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
                 }
             }
         }
 
-        int [][] result = new int[n][2];
-        int index=0;
+        int result[][] = new int [n][2];
+        int index =0;
 
         result[index][0] = arr[0][0];
         result[index][1] = arr[0][1];
-
         for(int i=1;i<n;i++){
-            if(arr[i][0] <= result[index][1]){
+            if(arr[i][0]<= result[index][1]){
                 if(arr[i][1] > result[index][1]){
                     result[index][1] = arr[i][1];
                 }
             }
             else{
                 index++;
-                result[index][0] = arr[i][0];
+                result[index][0]= arr[i][0];
                 result[index][1] = arr[i][1];
             }
         }
 
-        int finalResult[][] = new int [index+1][2];
-
+        int [][] finalResult = new int [index+1][2];
         for(int i=0;i<=index;i++){
-            finalResult[i][0]= result[i][0];
+            finalResult[i][0] = result[i][0];
             finalResult[i][1] = result[i][1];
         }
+
+
+
 
         return finalResult;
     }
