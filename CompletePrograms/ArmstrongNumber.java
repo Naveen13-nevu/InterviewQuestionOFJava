@@ -19,8 +19,5 @@ public class ArmstrongNumber {
         else{
             System.out.println(orginal+ " it is not a armstrong number");
         }
-
-
-
     }
 }
