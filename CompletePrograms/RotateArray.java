@@ -13,8 +13,5 @@ public class RotateArray {
          for(int i =0;i<n-k;i++){
             System.out.print(arr[i]);
         }
-
-        
-
     }
 }
