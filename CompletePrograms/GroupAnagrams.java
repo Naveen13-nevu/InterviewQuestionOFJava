@@ -19,7 +19,6 @@ public class GroupAnagrams {
             }
         }
 
-
         return new String(ch);
     }
 

@@ -1,7 +1,6 @@
 
 
 public class Kaprekar6174 {
-    
 
     public static void main(String[] args) {
         int num = 1178;
