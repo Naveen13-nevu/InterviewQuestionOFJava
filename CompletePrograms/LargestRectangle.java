@@ -10,7 +10,15 @@ public class LargestRectangle {
 
         for (int i = 0; i <= n; i++) {
 
-            int currentHeight = (i == n) ? 0 : heights[i];
+            int currentHeight;
+
+            if (i == n) {
+                 currentHeight = 0;
+            } 
+            else {
+
+             currentHeight = heights[i];
+            }
 
             while (!stack.isEmpty() && currentHeight < heights[stack.peek()]) {
 
