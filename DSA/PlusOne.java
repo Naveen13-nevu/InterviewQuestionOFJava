@@ -21,10 +21,10 @@ public class PlusOne {
         return result;
     }
     public static void main(String[] args) {
-        int digits[] = {1,2,3};
+        int digits[] = {2,2,3};
        plus(digits);
        for(int p:digits){
-        System.out.print(p);
+        System.out.print(p+" ");
        }
     }
 }
