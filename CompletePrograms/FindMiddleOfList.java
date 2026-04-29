@@ -35,7 +35,6 @@ public class FindMiddleOfList {
 
         ListNode middleNode = middle(head);
         System.out.println(middleNode.val);
-
-
+        
     }
 }
