@@ -22,7 +22,6 @@ public class GroupAnagrams {
         return new String(ch);
     }
 
-
     public static void main(String[] args) {
         
         String str [] = {"eat", "tea", "tan", "ate", "nat", "bat"};
