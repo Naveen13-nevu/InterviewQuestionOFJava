@@ -15,10 +15,9 @@ public class MajorityOfElements {
         }
         return -1;
     }
-    
     public static void main(String[] args) {
         
-        int arr[] = {2,2,1,1,3,3,2,2,2};
+        int arr[] = {4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,3,3,2,2,4,4,4};
         int result = major(arr);
         System.out.println(result);
 

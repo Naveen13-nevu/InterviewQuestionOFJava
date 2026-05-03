@@ -1,5 +1,4 @@
 
-
 public class LongestCommonPrefix {
     
     public static String longest(String [] str){
@@ -7,7 +6,6 @@ public class LongestCommonPrefix {
         if(str.length == 0){
             return "";
         }
-
         for(int i=0;i<str[0].length();i++){
 
             char ch = str[0].charAt(i);
@@ -21,7 +19,6 @@ public class LongestCommonPrefix {
 
         return str[0];
     }
-
     public static void main(String[] args) {
         
         String[] str = {"flower", "flight","fly"};
