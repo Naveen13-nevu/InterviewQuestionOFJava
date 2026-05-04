@@ -2,7 +2,6 @@ import java.util.Stack;
 
 public class NextGreaterElement {
 
-
     public static int []nextGreat(int []arr){
 
         int n= arr.length;
@@ -22,14 +21,11 @@ public class NextGreaterElement {
             }
             stack.push(arr[i]);
         }
-
-
         return result;
     }
-
     public static void main(String[] args) {
         
-        int []arr = {4, 3, 2, 1};
+        int []arr = {1,2,3,4,5};
 
         int result[] = nextGreat(arr);
 
