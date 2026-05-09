@@ -60,8 +60,5 @@ public class GroupByDept {
        .collect(Collectors.groupingBy(Employee::getDept));
        System.out.println(sort);
 
-
-
-
     }
 }
